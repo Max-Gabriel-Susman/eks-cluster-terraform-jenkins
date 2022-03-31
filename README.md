@@ -1,4 +1,4 @@
-# How to use terraform to spin up three ubuntu nodes using spot instances.
+# K8s orchestrated aws cluster 
 
 ### Download and Install Terraform
 https://www.terraform.io/downloads.html
