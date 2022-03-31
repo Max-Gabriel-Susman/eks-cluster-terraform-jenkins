@@ -1,5 +1,3 @@
-variable "ssh_key_name" {default = "YOUR_KEY_NAME_HERE"}
-variable "aws_region_name" { default = "us-west-2" }
 
 provider "aws" {
   # Use keys in home dir.
@@ -107,11 +105,4 @@ resource "aws_security_group_rule" "allow_SG_any" {
   description     = "Any from SG for K8s Cluster"
 
   security_group_id = "${aws_security_group.k8s_sg.id}"
-}
-
-output "master_ip" {
-  value = "${aws_spot_instance_request.k8s-master.public_ip}"
-}
-output "worker_ips" {
-  value = "${aws_spot_instance_request.k8s-worker.*.public_ip}"
 }

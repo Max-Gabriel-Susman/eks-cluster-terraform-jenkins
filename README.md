@@ -3,7 +3,7 @@
 ### Download and Install Terraform
 https://www.terraform.io/downloads.html
 
-### Edit the k8s.tf file:
+### Edit the main.tf file:
 1. Change "YOUR_KEY_NAME_HERE" to your ssh keyname (assumes it's already uploaded)
 2. Update the AWS region as desired (make sure your ssh key is in this region)
 3. Add your AWS "access key" and "aws_secret_key" to this file (NOT RECOMENDED). 
