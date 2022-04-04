@@ -1,1 +1,9 @@
+# let's hide build config at least for now
 Jenkinsfile
+
+# these are just for me, no peaking (;
+dev-notes.txt
+
+# terraform stuff specific to my own operations
+.terraform.lock.hcl
+terraform.tfstate
